@@ -105,11 +105,14 @@
                     <!-- Sacolinha (atrás do texto) --><!-- 'clip-path' com polygon para um corte diagonal: corta menos em cima (55%) e mais embaixo (45%) --><svg class="absolute -left-2 top-1/2 -translate-y-1/2 w-14 h-14 text-blue-400 transform -rotate-12 z-0 opacity-70" 
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                          style="clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" />
                     </svg>
-                    <!-- Texto (sem fundo sólido, para misturar com o header transparente) --><!-- Padding 'pl-7' para aumentar o espaço --><span class="relative z-20 pl-7 pr-2"> 
-                        MKPRO <span class="text-blue-500">STORE</span>
-                    </span>
+                    <!-- Texto (sem fundo sólido, para misturar com o header transparente) --><!-- Padding 'pl-7' para aumentar o espaço -->
+                    <!-- MODIFICADO: Alterado de span para div e adicionado flex flex-col leading-tight -->
+                    <div class="relative z-20 pl-7 pr-2 flex flex-col leading-tight"> 
+                        <span>MKPRO</span>
+                        <span class="text-blue-500">STORE</span>
+                    </div>
                 </a>
                 <div class="hidden items-center space-x-6 md:flex">
                     <a href="#features" class="text-gray-300 hover:text-blue-400 transition-colors">Funcionalidades</a>
@@ -469,10 +472,12 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 
                 <!-- Coluna 1: Logo da Loja --><div>
-                    <a href="#" class="text-2xl font-bold text-white">
-                        MKPRO <span class="text-blue-500">STORE</span>
+                    <!-- MODIFICADO: Adicionado flex flex-col leading-tight -->
+                    <a href="#" class="text-2xl font-bold text-white flex flex-col leading-tight">
+                        <span>MKPRO</span>
+                        <span class="text-blue-500">STORE</span>
                     </a>
-                    <!-- Texto do slogan alterado --><p class="mt-4 text-gray-400">Conecte-se com o Melhor Produto</p>
+                    <!-- Texto do slogan alterado --><p class="mt-4 text-gray-400">Conecte-se com os Melhores Produtos!</p>
                 </div>
 
                 <!-- Coluna 2: Links do Produto --><div>
@@ -621,5 +626,3 @@
 
 </body>
 </html>
-
-
