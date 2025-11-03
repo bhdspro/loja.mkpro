@@ -171,8 +171,7 @@
                             src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto1.png" 
                             alt="Foto principal do Smartwatch Microwear 3 Ultra AI com tela ligada" 
                             class="rounded-xl shadow-2xl object-cover"
-                            onerror="this.src='https://placehold.co/800x800/111827/9ca3af?text=Erro+ao+carregar+imagem'"
-                        >
+                        > <!-- 'onerror' removido -->
                     </div>
                 </div>
             </div>
@@ -304,8 +303,7 @@
                             src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto2.png" 
                             alt="Caixa do Smartwatch Microwear 3 Ultra AI com 4 pulseiras e acessórios" 
                             class="rounded-xl shadow-2xl"
-                            onerror="this.src='https://placehold.co/800x600/1f2937/9ca3af?text=Erro+na+imagem'"
-                        >
+                        > <!-- 'onerror' removido -->
                     </div>
                     <div class="md:w-1/2 md:pl-10">
                         <ul class="space-y-4 text-gray-300 text-lg">
@@ -342,18 +340,27 @@
                     <h2 class="text-4xl font-extrabold text-white">Design em Cada Detalhe</h2>
                     <p class="mt-4 text-lg text-gray-400">Veja o Microwear 3 Ultra AI de todos os ângulos.</p>
                 </div>
+                <!-- Correção: Adicionado aspect-square, object-cover e movido rounded-lg para o div pai -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="group cursor-pointer">
-                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto3.png" alt="Vista frontal detalhada do Microwear 3 Ultra AI" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto3.png'">
+                    <div class="group cursor-pointer aspect-square overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto3.png" alt="Vista frontal detalhada do Microwear 3 Ultra AI" 
+                             class="w-full h-full object-cover transition-transform transform group-hover:scale-105 duration-300"
+                        > <!-- 'onerror' removido -->
                     </div>
-                    <div class="group cursor-pointer">
-                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto4.png" alt="Vista lateral do Microwear 3 Ultra AI (coroa e botões)" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto4.png'">
+                    <div class="group cursor-pointer aspect-square overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto4.png" alt="Vista lateral do Microwear 3 Ultra AI (coroa e botões)" 
+                             class="w-full h-full object-cover transition-transform transform group-hover:scale-105 duration-300"
+                        > <!-- 'onerror' removido -->
                     </div>
-                    <div class="group cursor-pointer">
-                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto5.png" alt="Sensores de saúde na parte traseira do Microwear 3 Ultra AI" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto5.png'">
+                    <div class="group cursor-pointer aspect-square overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto5.png" alt="Sensores de saúde na parte traseira do Microwear 3 Ultra AI" 
+                             class="w-full h-full object-cover transition-transform transform group-hover:scale-105 duration-300"
+                        > <!-- 'onerror' removido -->
                     </div>
-                    <div class="group cursor-pointer">
-                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto6.png" alt="Microwear 3 Ultra AI sendo usado no pulso" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto6.png'">
+                    <div class="group cursor-pointer aspect-square overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/foto6.png" alt="Microwear 3 Ultra AI sendo usado no pulso" 
+                             class="w-full h-full object-cover transition-transform transform group-hover:scale-105 duration-300"
+                        > <!-- 'onerror' removido -->
                     </div>
                 </div>
             </div>
