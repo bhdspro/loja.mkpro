@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- ===== SEO AVANÇADO ===== -->
+    <!-- Metadados de SEO Avançado -->
     <title>Smartwatch Microwear 3 Ultra AI | O Melhor Preço | Compre Já</title>
     <meta name="description" content="Compre o Smartwatch Microwear 3 Ultra AI. O smartwatch Android completo com Google Play, 16GB e design premium. Oferta por tempo limitado. Compre já!">
     <meta name="keywords" content="smartwatch microwear 3 ultra ai, smartwatch android, relógio com google play, smartwatch 16gb, smartwatch 5g, melhor smartwatch, comprar smartwatch">
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai" />
     
-    <!-- Schema.org (JSON-LD) para Google Rich Snippets -->
+    <!-- Schema.org (Rich Snippet para Google) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -39,11 +39,12 @@
       }
     }
     </script>
-    <!-- ===== FIM SEO AVANÇADO ===== -->
-
-    <!-- Tailwind CSS CDN --><script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Font Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     
@@ -104,8 +105,19 @@
     <header class="sticky top-0 z-50 w-full border-b border-gray-800 bg-gray-950/80 backdrop-blur-md">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold text-white">
-                    Microwear <span class="text-blue-500">Ultra</span>
+                <a href="#" class="relative flex items-center text-2xl font-bold text-white filter drop-shadow(0 1px 1px rgba(0,0,0,0.5))">
+                    <!-- Sacolinha (atrás do texto) -->
+                    <!-- 'clip-path' com polygon para um corte diagonal: corta menos em cima (55%) e mais embaixo (45%) -->
+                    <svg class="absolute -left-2 top-1/2 -translate-y-1/2 w-14 h-14 text-blue-400 transform -rotate-12 z-0 opacity-70" 
+                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                         style="clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" />
+                    </svg>
+                    <!-- Texto (sem fundo sólido, para misturar com o header transparente) -->
+                    <!-- Padding 'pl-7' para aumentar o espaço -->
+                    <span class="relative z-20 pl-7 pr-2"> 
+                        MKPRO <span class="text-blue-500">STORE</span>
+                    </span>
                 </a>
                 <div class="hidden items-center space-x-6 md:flex">
                     <a href="#features" class="text-gray-300 hover:text-blue-400 transition-colors">Funcionalidades</a>
@@ -134,8 +146,9 @@
         </nav>
     </header>
 
-    <!-- ===== Seção Hero ===== -->
+    <!-- ===== Main Content ===== -->
     <main>
+        <!-- ===== Seção Hero ===== -->
         <section class="relative min-h-screen flex items-center bg-gradient-to-b from-gray-950 via-gray-950 to-blue-900/30 pt-20 pb-10">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -147,14 +160,16 @@
                         <p class="mt-6 text-lg md:text-xl text-gray-300 max-w-lg mx-auto md:mx-0">
                             O Celular de Pulso Definitivo com Google Play, 16GB de memória, Câmera e design estilo Titânio. Deixe seu smartphone em casa.
                         </p>
-                        <!-- Gatilhos Mentais: Preço (Ancoragem), Urgência, Frete -->
+                        
+                        <!-- Gatilho Mental: Ancoragem de Preço e Escassez -->
                         <div class="mt-8">
                             <span class="text-xl line-through text-gray-400">De R$799,99</span>
                             <span class="text-4xl font-bold text-white ml-2">Por R$328,99</span>
                             <span class="block text-lg text-teal-400 font-semibold">com Frete Grátis para todo o Brasil</span>
                         </div>
-                        <div class="mt-4 bg-red-600 text-white font-bold px-4 py-2 rounded-lg inline-block shadow-lg">
-                            OFERTA LIMITADA! Restam 17 unidades.
+                        <!-- CAIXA VERMELHA - Estilo diminuído (text-sm, px-3, py-1.5) e ID adicionado -->
+                        <div class="mt-4 bg-red-600 text-white font-semibold px-3 py-1.5 rounded-lg inline-block shadow-lg text-sm">
+                            OFERTA LIMITADA! Restam <span id="stock-count">17</span> unidades.
                         </div>
                         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <a href="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/comprar.html" target="_blank" class="cta-pulse inline-block px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-teal-500 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 focus:ring-4 focus:ring-blue-800 transition-all transform hover:scale-105">
@@ -175,36 +190,34 @@
             </div>
         </section>
 
-        <!-- ===== Seção de Funcionalidades Principais ===== -->
+        <!-- ===== Seção Funcionalidades (Ícones Corrigidos) ===== -->
         <section id="features" class="py-20 bg-gray-900 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-extrabold text-white">Por que o Microwear 3 Ultra é Único?</h2>
+                    <h2 class="text-4xl font-extrabold text-white">Por que ele é Único?</h2>
                     <p class="mt-4 text-lg text-gray-400">Ele não é um relógio comum. É um smartphone no seu pulso.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 transform hover:scale-105 hover:border-blue-500 transition-all duration-300">
-                        <!-- ÍCONE SVG NOVO -->
+                        <!-- Ícone: Google Play -->
                         <svg class="w-16 h-16 mb-6 text-teal-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 13.5l3 3m0 0l3-3m-3 3V7.5" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                         </svg>
                         <h3 class="text-2xl font-bold text-white mb-3">Google Play Integrado</h3>
                         <p class="text-gray-300">Baixe seus apps favoritos: WhatsApp, Instagram, Spotify, Uber, Waze, YouTube e até apps de banco.</p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 transform hover:scale-105 hover:border-blue-500 transition-all duration-300">
-                        <!-- ÍCONE SVG NOVO -->
+                        <!-- Ícone: Escudo (Resistência) -->
                         <svg class="w-16 h-16 mb-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.613 2.4-1.683 3.108M12 21c-1.268 0-2.4-.613-3.108-1.683M2.892 12c0-1.268.613-2.4 1.683-3.108M12 2.892c1.268 0 2.4.613 3.108 1.683M4.892 4.892l1.414-1.414M17.698 17.698l1.414-1.414M17.698 4.892l-1.414 1.414M4.892 17.698l1.414 1.414M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.333 9-6.03 9-11.623 0-1.31-.21-2.571-.6-3.749A11.959 11.959 0 0 1 12 2.714Z" />
                         </svg>
                         <h3 class="text-2xl font-bold text-white mb-3">Design Premium (Estilo Titânio)</h3>
                         <p class="text-gray-300">Corpo com acabamento estilo titânio e tela de alta resistência. Resistência militar MIL-STD-810H e 10ATM (100m de água).</p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-2xl shadow-xl border border-gray-700 transform hover:scale-105 hover:border-blue-500 transition-all duration-300">
-                        <!-- ÍCONE SVG NOVO -->
+                        <!-- Ícone: Wi-Fi (Conectividade) -->
                         <svg class="w-16 h-16 mb-6 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856a8.25 8.25 0 0 1 13.788 0M1.923 8.675a11.25 11.25 0 0 1 20.154 0M12.828 18.162a4.5 4.5 0 0 1-1.656 0" />
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856a8.25 8.25 0 0 1 13.788 0M1.923 8.675a11.25 11.25 0 0 1 20.154 0M12 18v.01" />
                         </svg>
                         <h3 class="text-2xl font-bold text-white mb-3">Conectividade Total</h3>
                         <p class="text-gray-300">Faça ligações, use Wi-Fi ou dados 5G (via chip) e conecte fones Bluetooth. 100% independente do seu celular.</p>
@@ -213,12 +226,12 @@
             </div>
         </section>
 
-        <!-- ===== NOVA SEÇÃO: Comparativo (Marketing) ===== -->
+        <!-- ===== Seção Comparação (Marketing) ===== -->
         <section id="comparison" class="py-24 bg-gray-900 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-extrabold text-white">Não Compre Outro Antes de Ver Isso</h2>
-                    <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Veja a comparação. O Microwear 3 Ultra não tem concorrentes na sua faixa de preço.</p>
+                    <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Veja a comparação. Ele não tem concorrentes na sua faixa de preço.</p>
                 </div>
                 
                 <div class="max-w-5xl mx-auto overflow-x-auto">
@@ -230,7 +243,8 @@
                                         <th scope="col" class="py-3.5 px-4 text-left text-lg font-semibold text-white">Funcionalidade</th>
                                         <th scope="col" class="py-3.5 px-4 text-center text-lg font-semibold text-white">Smartwatch Comum</th>
                                         <th scope="col" class="py-3.5 px-4 text-center text-lg font-semibold text-white">Relógio de Grife</th>
-                                        <th scope="col" class="py-3.5 px-4 text-center text-lg font-semibold text-white bg-blue-600/50">Microwear 3 Ultra</th>
+                                        <!-- Nome completo do produto -->
+                                        <th scope="col" class="py-3.5 px-4 text-center text-lg font-semibold text-white bg-blue-600/50">Smartwatch Microwear 3 Ultra AI</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-700">
@@ -296,7 +310,7 @@
             </div>
         </section>
 
-        <!-- ===== Seção: Itens Inclusos ===== -->
+        <!-- ===== Seção Itens Inclusos (Gatilho Bônus) ===== -->
         <section id="included" class="py-20 bg-gray-950 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -341,7 +355,31 @@
             </div>
         </section>
 
-        <!-- ===== Seção de Depoimentos (Prova Social) ===== -->
+        <!-- ===== Seção Galeria (Imagens do Produto) ===== -->
+        <section id="gallery" class="py-20 bg-gray-900 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-white">Design em Cada Detalhe</h2>
+                    <p class="mt-4 text-lg text-gray-400">Veja o Microwear 3 Ultra AI de todos os ângulos.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="group cursor-pointer">
+                        <img src="https://loremflickr.com/600/600/smartwatch,front,black,clean?random=3" alt="Vista frontal detalhada do Microwear 3 Ultra AI" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://placehold.co/600x600/1f2937/9ca3af?text=Imagem+Frontal'">
+                    </div>
+                    <div class="group cursor-pointer">
+                        <img src="https://loremflickr.com/600/600/smartwatch,side,buttons,crown,detail?random=4" alt="Vista lateral do Microwear 3 Ultra AI (coroa e botões)" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://placehold.co/600x600/1f2937/9ca3af?text=Imagem+Lateral'">
+                    </div>
+                    <div class="group cursor-pointer">
+                        <img src="https://loremflickr.com/600/600/smartwatch,sensors,heart,back?random=5" alt="Sensores de saúde na parte traseira do Microwear 3 Ultra AI" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://placehold.co/600x600/1f2937/9ca3af?text=Imagem+Traseira'">
+                    </div>
+                    <div class="group cursor-pointer">
+                        <img src="https://loremflickr.com/600/600/smartwatch,wrist,person,active?random=6" alt="Microwear 3 Ultra AI sendo usado no pulso" class="rounded-lg shadow-lg transition-transform transform group-hover:scale-105 duration-300" onerror="this.src='https://placehold.co/600x600/1f2937/9ca3af?text=Imagem+no+Pulso'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Seção Depoimentos (Prova Social) ===== -->
         <section id="testimonials" class="py-24 bg-gray-950 fade-in-section">
             <div class="container mx-auto px-6 max-w-5xl">
                 <div class="text-center mb-16">
@@ -363,12 +401,13 @@
             </div>
         </section>
 
-        <!-- ===== Seção de FAQ ===== -->
+        <!-- ===== Seção FAQ (Perguntas Frequentes) ===== -->
         <section id="faq" class="py-20 bg-gray-900 fade-in-section">
             <div class="container mx-auto px-6 max-w-4xl">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-extrabold text-white">Perguntas Frequentes (FAQ)</h2>
-                    <p class="mt-4 text-lg text-gray-400">Tirando suas dúvidas sobre o Ultra AI.</p>
+                    <!-- Nome completo do produto -->
+                    <p class="mt-4 text-lg text-gray-400">Tirando suas dúvidas sobre o Smartwatch Microwear 3 Ultra AI.</p>
                 </div>
                 <div class="space-y-4">
                     <div class="bg-gray-800 rounded-lg border border-gray-700">
@@ -391,7 +430,7 @@
             </div>
         </section>
 
-        <!-- ===== NOVA SEÇÃO: Suporte WhatsApp ===== -->
+        <!-- ===== Seção Suporte WhatsApp ===== -->
         <section id="support-whatsapp" class="py-24 bg-gray-900 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <div class="max-w-3xl mx-auto">
@@ -400,7 +439,7 @@
                     </svg>
                     <h2 class="text-4xl font-extrabold text-white mt-6">Ainda com Dúvidas?</h2>
                     <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
-                        Nossa equipe está pronta para te atender. Clique no botão abaixo e fale conosco diretamente pelo WhatsApp para tirar qualquer dúvida antes da sua compra.
+                        Nossa equipe está pronta para te atender. Clique no botão abaixo e fale conosco diretamente pelo WhatsApp para tirar qualquer dúvida sobre o Smartwatch Microwear 3 Ultra AI.
                     </p>
                     <div class="mt-10">
                         <a href="https://wa.me/5543991228540?text=Olá! Tenho interesse no Smartwatch Microwear 3 Ultra AI" target="_blank" class="inline-flex items-center gap-3 px-10 py-4 text-lg font-bold text-white bg-green-600 rounded-lg shadow-lg hover:bg-green-700 transition-all transform hover:scale-105">
@@ -414,7 +453,7 @@
             </div>
         </section>
 
-        <!-- ===== Seção de Call to Action (CTA) Final ===== -->
+        <!-- ===== Seção CTA Final (Última Chamada) ===== -->
         <section class="py-24 bg-gray-950 fade-in-section">
             <div class="container mx-auto px-6">
                 <div class="bg-gradient-to-r from-blue-600 to-teal-500 rounded-2xl shadow-2xl p-10 md:p-16 text-center">
@@ -437,49 +476,50 @@
         </section>
     </main>
 
-    <!-- ===== Botão Flutuante de WhatsApp (RE-ADICIONADO) ===== -->
+    <!-- ===== Botão Flutuante de WhatsApp ===== -->
     <a href="https://wa.me/5543991228540?text=Olá! Tenho interesse no Smartwatch Microwear 3 Ultra AI" target="_blank" class="float-whatsapp flex items-center justify-center" aria-label="Fale conosco pelo WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
             <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.626-2.957 6.584-6.591 6.584zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.449.099-.133.197-.513.646-.629.775-.116.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.118-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.449-1.076-.612-1.47-.16-.389-.323-.335-.449-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.05-.084-.182-.133-.38-.232z"/>
         </svg>
     </a>
     
-    <!-- ===== Rodapé (LIMPO) ===== -->
+    <!-- ===== Rodapé (Footer) ===== -->
     <footer class="bg-gray-900 border-t border-gray-800">
         <div class="container mx-auto px-6 py-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Coluna 1: Logo -->
+                
+                <!-- Coluna 1: Logo da Loja -->
                 <div>
                     <a href="#" class="text-2xl font-bold text-white">
-                        Microwear <span class="text-blue-500">Ultra</span>
+                        MKPRO <span class="text-blue-500">STORE</span>
                     </a>
                     <p class="mt-4 text-gray-400">O futuro no seu pulso. O celular de pulso definitivo.</p>
                 </div>
 
-                <!-- Coluna 2: Produto -->
+                <!-- Coluna 2: Links do Produto -->
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Produto</h4>
                     <ul class="space-y-3">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Funcionalidades</a></li>
-                        <li><a href="#specs" class="text-gray-400 hover:text-white transition-colors">Especificações</a></li>
+                        <li><a href="#comparison" class="text-gray-400 hover:text-white transition-colors">Compare</a></li>
                         <li><a href="#gallery" class="text-gray-400 hover:text-white transition-colors">Galeria</a></li>
                         <li><a href="https://loja.mkpro.com.br/smartwatch-microwear-3-ultra-ai/comprar.html" target="_blank" class="text-gray-400 hover:text-white transition-colors">Comprar</a></li>
                     </ul>
                 </div>
 
-                <!-- Coluna 3: Navegação Rápida (Atualizado) -->
+                <!-- Coluna 3: Links de Suporte/Info -->
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Links Úteis</h4>
                     <ul class="space-y-3">
                         <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">Depoimentos</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">Perguntas Frequentes</a></li>
                         <li><a href="#included" class="text-gray-400 hover:text-white transition-colors">Itens Inclusos</a></li>
-                        <li><a href="#comparison" class="text-gray-400 hover:text-white transition-colors">Compare</a></li>
+                        <li><a href="#support-whatsapp" class="text-gray-400 hover:text-white transition-colors">Suporte via WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Linha de Copyright (Como Revendedor) -->
+            <!-- Copyright -->
             <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
                 &copy; 2025 MKPRO STORE. Todos os direitos reservados.
             </div>
@@ -503,16 +543,21 @@
                 const icon = question.querySelector('.faq-icon');
                 const isOpen = answer.classList.contains('open');
 
-                // Fecha todos
+                // Fecha todos os outros acordeões
                 document.querySelectorAll('.faq-answer.open').forEach(ans => {
-                    ans.classList.remove('open');
-                    ans.previousElementSibling.querySelector('.faq-icon').textContent = '+';
+                    if (ans !== answer) {
+                        ans.classList.remove('open');
+                        ans.previousElementSibling.querySelector('.faq-icon').textContent = '+';
+                    }
                 });
 
-                // Abre ou fecha o clicado
+                // Abre ou fecha o acordeão clicado
                 if (!isOpen) {
                     answer.classList.add('open');
                     icon.textContent = '−';
+                } else {
+                    answer.classList.remove('open');
+                    icon.textContent = '+';
                 }
             });
         });
@@ -530,6 +575,72 @@
             sections.forEach(section => {
                 observer.observe(section);
             });
+
+            // ===== Script de Escassez (Gatilho Mental) =====
+            const stockKey = 'microwearUltraStock';
+            const timestampKey = 'microwearStockResetTimestamp'; // Chave para o carimbo de data/hora
+            const stockElement = document.getElementById('stock-count');
+            const initialStockValue = 17;
+            const now = new Date().getTime();
+            const oneDayInMs = 24 * 60 * 60 * 1000; // 24 horas em milissegundos
+
+            let stock = localStorage.getItem(stockKey);
+            let resetTimestamp = localStorage.getItem(timestampKey);
+            let currentStock;
+
+            // 1. Lógica de Reinício (Reset)
+            if (resetTimestamp && (now - parseInt(resetTimestamp) > oneDayInMs)) {
+                // Se o estoque zerou e já passaram 24h, reinicia.
+                currentStock = initialStockValue;
+                localStorage.setItem(stockKey, currentStock);
+                localStorage.removeItem(timestampKey); // Limpa o timestamp para o próximo ciclo
+            } else if (stock === null) {
+                // Primeira visita do usuário
+                currentStock = initialStockValue;
+                localStorage.setItem(stockKey, currentStock);
+            } else {
+                // Visitante recorrente, dentro das 24h (ou estoque ainda não zerou)
+                currentStock = parseInt(stock);
+            }
+
+            // 2. Atualiza a UI
+            if (stockElement) {
+                stockElement.textContent = currentStock;
+            }
+
+            // 3. Função para diminuir o estoque
+            function decreaseStock() {
+                let stock = parseInt(localStorage.getItem(stockKey));
+                
+                if (stock > 0) {
+                    stock--; // Diminui
+                    localStorage.setItem(stockKey, stock); // Salva
+                    
+                    if (stockElement) {
+                        stockElement.textContent = stock; // Atualiza
+                    }
+
+                    if (stock === 0) {
+                        // Quando chegar a 0, salva o timestamp
+                        localStorage.setItem(timestampKey, new Date().getTime());
+                    } else {
+                        // Se ainda não zerou, agenda a próxima diminuição
+                        scheduleNextDecrease(stock); 
+                    }
+                }
+            }
+
+            // 4. Função para agendar a diminuição
+            function scheduleNextDecrease(currentStock) {
+                if (currentStock > 0) {
+                    // Intervalo aleatório entre 20 (20000ms) e 30 (30000ms) segundos
+                    const randomInterval = Math.floor(Math.random() * (30000 - 20000 + 1)) + 20000;
+                    setTimeout(decreaseStock, randomInterval);
+                }
+            }
+
+            // 5. Inicia o ciclo
+            scheduleNextDecrease(currentStock);
         });
     </script>
 
